@@ -14,7 +14,7 @@
 
 <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="805.0" styleClass="root" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.addBook">
    <children>
-      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="805.0" styleClass="root" stylesheets="@application.css">
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="805.0" style="-fx-background-color: #faeece;" styleClass="root" stylesheets="@application.css">
          <children>
             <TableView fx:id="searchTable" layoutX="-4.0" layoutY="227.0" prefHeight="382.0" prefWidth="813.0" stylesheets="@application.css">
                <columns>
@@ -41,22 +41,22 @@
             <TextField fx:id="nameAddBook" layoutX="222.0" layoutY="132.0" promptText="Name" />
             <TextField fx:id="authorAddBook" layoutX="424.0" layoutY="132.0" promptText="Author" />
             <TextField fx:id="pagesAddBook" layoutX="631.0" layoutY="132.0" prefHeight="25.0" prefWidth="137.0" promptText="Number of Pages" />
-            <Text fill="WHITE" layoutX="14.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ISBN">
+            <Text fill="BLACK" layoutX="14.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ISBN">
                <font>
                   <Font name="Al Tarikh Regular" size="13.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutX="424.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author">
+            <Text fill="BLACK" layoutX="424.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author">
                <font>
                   <Font name="Al Tarikh Regular" size="13.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutX="222.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="50.341796875">
+            <Text fill="BLACK" layoutX="222.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="50.341796875">
                <font>
                   <Font name="Al Tarikh Regular" size="13.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutX="631.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Pages">
+            <Text fill="BLACK" layoutX="631.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Pages">
                <font>
                   <Font name="Al Tarikh Regular" size="13.0" />
                </font>
