@@ -12,7 +12,7 @@
 
 <BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="982.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
    <left>
-      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #BED1CD;" BorderPane.alignment="CENTER">
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #c4b17e;" BorderPane.alignment="CENTER">
          <children>
             <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="136.0" prefWidth="170.0">
                <children>
@@ -21,10 +21,10 @@
                         <Image url="@../Images/libIcon.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="36.0" layoutY="86.0" text="Admin System" />
+                  <Label layoutX="36.0" layoutY="86.0" text="Admin Control" />
                </children>
             </AnchorPane>
-            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="146.0" mnemonicParsing="false" onMouseClicked="#home" prefHeight="59.0" prefWidth="176.0" styleClass="blue" stylesheets="@application.css" text="Home">
+            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="146.0" mnemonicParsing="false" onMouseClicked="#home" prefHeight="59.0" prefWidth="176.0" style="-fx-background-color: #c4b17e;" styleClass="blue" stylesheets="@application.css" text="Home">
                <graphic>
                   <ImageView fitHeight="52.0" fitWidth="53.0">
                      <image>
@@ -33,7 +33,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="146.0" mnemonicParsing="false" onMouseClicked="#addBook" prefHeight="59.0" prefWidth="176.0" styleClass="blue" stylesheets="@application.css" text="Add Book &amp; List">
+            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="146.0" mnemonicParsing="false" onMouseClicked="#addBook" prefHeight="59.0" prefWidth="176.0" style="-fx-background-color: #c4b17e;" styleClass="blue" stylesheets="@application.css" text="Add Book &amp; Display">
                <graphic>
                   <ImageView fitHeight="42.0" fitWidth="48.0" opacity="0.6">
                      <image>
@@ -42,7 +42,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="266.0" mnemonicParsing="false" onMouseClicked="#fineAdmin" prefHeight="59.0" prefWidth="176.0" styleClass="blue" stylesheets="@application.css" text="Fine">
+            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="266.0" mnemonicParsing="false" onMouseClicked="#fineAdmin" prefHeight="59.0" prefWidth="176.0" style="-fx-background-color: #c4b17e;" styleClass="blue" stylesheets="@application.css" text="Fine Info">
                <graphic>
                   <ImageView fitHeight="50.0" fitWidth="52.0">
                      <image>
@@ -51,7 +51,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="265.0" mnemonicParsing="false" onMouseClicked="#giveBook" prefHeight="59.0" prefWidth="176.0" styleClass="blue" stylesheets="@application.css" text="Give Book">
+            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="265.0" mnemonicParsing="false" onMouseClicked="#giveBook" prefHeight="59.0" prefWidth="176.0" style="-fx-background-color: #c4b17e;" styleClass="blue" stylesheets="@application.css" text="Give Book">
                <graphic>
                   <ImageView fitHeight="44.0" fitWidth="41.0" opacity="0.62">
                      <image>
@@ -60,7 +60,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="324.0" mnemonicParsing="false" onMouseClicked="#deleteBook" prefHeight="59.0" prefWidth="176.0" styleClass="blue" stylesheets="@application.css" text="Delete Book">
+            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="324.0" mnemonicParsing="false" onMouseClicked="#deleteBook" prefHeight="59.0" prefWidth="176.0" style="-fx-background-color: #c4b17e;" styleClass="blue" stylesheets="@application.css" text="Delete Books">
                <graphic>
                   <ImageView fitHeight="46.0" fitWidth="45.0" opacity="0.62">
                      <image>
@@ -69,7 +69,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="442.0" mnemonicParsing="false" onMouseClicked="#bookReturn" prefHeight="62.0" prefWidth="167.0" styleClass="blue" stylesheets="@application.css" text="Book Return">
+            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="442.0" mnemonicParsing="false" onMouseClicked="#bookReturn" prefHeight="62.0" prefWidth="167.0" style="-fx-background-color: #c4b17e;" styleClass="blue" stylesheets="@application.css" text="Return Book">
                <graphic>
                   <ImageView fitHeight="42.0" fitWidth="42.0" opacity="0.58">
                      <image>
@@ -78,7 +78,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#adminProfile" prefHeight="62.0" prefWidth="167.0" styleClass="blue" stylesheets="@application.css" text="Profile">
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#adminProfile" prefHeight="62.0" prefWidth="167.0" style="-fx-background-color: #c4b17e;" styleClass="blue" stylesheets="@application.css" text="User Profile">
                <graphic>
                   <ImageView fitHeight="47.0" fitWidth="48.0" opacity="0.78">
                      <image>
@@ -86,7 +86,7 @@
                      </image>
                   </ImageView>
                </graphic></Button>
-            <Button fx:id="exitProgram" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#exitProgram" prefHeight="52.0" prefWidth="172.0" styleClass="blue" stylesheets="@application.css" text="Exit">
+            <Button fx:id="exitProgram" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#exitProgram" prefHeight="52.0" prefWidth="172.0" style="-fx-background-color: #c4b17e;" styleClass="blue" stylesheets="@application.css" text="Exit">
                <graphic>
                   <ImageView fitHeight="49.0" fitWidth="56.0" opacity="0.67">
                      <image>
@@ -98,7 +98,7 @@
       </VBox>
    </left>
    <center>
-      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="805.0" styleClass="root" stylesheets="@application.css" BorderPane.alignment="CENTER">
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="805.0" styleClass="root" style="-fx-background-color: #faeece; -fx-background-radius: 10;" stylesheets="@application.css" BorderPane.alignment="CENTER">
          <children>
             <Button layoutY="-8.0" mnemonicParsing="false" onAction="#switchAdminScreen" prefHeight="76.0" prefWidth="90.0" styleClass="back">
                <graphic>
@@ -108,17 +108,18 @@
                      </image>
                   </ImageView>
                </graphic></Button>
-            <Label layoutX="119.0" layoutY="173.0" prefHeight="193.0" prefWidth="627.0" styleClass="text-simple" stylesheets="@application.css" text="Welcome The Deu CENG Library">
+            <Label layoutX="119.0" layoutY="173.0" prefHeight="225.0" prefWidth="627.0" styleClass="text-simple" stylesheets="@application.css" text="Northeast Valley Bookstore">
                <font>
                   <Font size="43.0" />
                </font>
             </Label>
-            <Label layoutX="47.0" layoutY="358.0" prefHeight="56.0" prefWidth="280.0" styleClass="text-simple" stylesheets="@application.css" text="Contact and Support">
+            <Label layoutX="550.0" layoutY="490.0" prefHeight="56.0" prefWidth="280.0" styleClass="text-simple" stylesheets="@application.css" text="Contact and Support">
                <font>
                   <Font size="27.0" />
                </font>
             </Label>
-            <Hyperlink layoutX="123.0" layoutY="423.0" onAction="#openContact" prefHeight="59.0" prefWidth="71.0" styleClass="blue">
+            
+            <Hyperlink layoutX="650.0" layoutY="530.0" onAction="#openContact" prefHeight="59.0" prefWidth="71.0" styleClass="blue">
                <graphic>
                   <ImageView fitHeight="63.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
                      <image>
