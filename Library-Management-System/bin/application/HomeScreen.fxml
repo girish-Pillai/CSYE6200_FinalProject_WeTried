@@ -17,7 +17,7 @@
             <Image url="@../Images/userIcon.png" />
          </image>
       </ImageView>
-      <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="216.0" layoutY="88.0" prefHeight="75.0" prefWidth="168.0" text="Continue As" textAlignment="CENTER" textFill="#aba1a1">
+      <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="415.0" layoutY="250.0" prefHeight="75.0" prefWidth="168.0" text="Continue As" textAlignment="CENTER" textFill="#aba1a1">
          <font>
             <Font name="Apple Braille" size="23.0" />
          </font>
@@ -36,9 +36,14 @@
                </image>
             </ImageView>
          </graphic></Button>
-      <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="285.0" layoutY="192.0" prefHeight="75.0" prefWidth="453.0" text="WELCOME TO THE LIBRARY" textAlignment="CENTER" textFill="#e4e4e4">
+      <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="255.0" layoutY="140.0" prefHeight="75.0" prefWidth="453.0" text="NORTHEAST VALLEY LIBRARY" textAlignment="CENTER" textFill="#e4e4e4">
          <font>
-            <Font name="Apple Braille" size="26.0" />
+            <Font name="Apple Braille" size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="260.0" layoutY="172.0" prefHeight="75.0" prefWidth="453.0" text="HOME TO INFINITE KNOWLEDGE" textAlignment="CENTER" textFill="#e4e4e4">
+         <font>
+            <Font name="Apple Braille" size="30.0" />
          </font>
       </Label>
       <Pane layoutX="-63.0" layoutY="-72.0" prefHeight="130.0" prefWidth="178.0" rotate="132.0" style="-fx-background-color: #c23b22; -fx-background-radius: 50;" />

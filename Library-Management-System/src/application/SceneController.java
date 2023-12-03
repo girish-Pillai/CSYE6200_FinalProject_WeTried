@@ -330,7 +330,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 	}
  public void openGitHub(ActionEvent event)throws URISyntaxException, IOException
  {
-	 Desktop.getDesktop().browse(new URI("https://github.com/DenizK7/LibrarySystem/tree/master/LibraryManagement"));
+	 Desktop.getDesktop().browse(new URI("https://github.com/girish-Pillai/CSYE6200_FinalProject_Team_WeTried"));
  }
  public void openContact(ActionEvent event)throws URISyntaxException, IOException
  {
