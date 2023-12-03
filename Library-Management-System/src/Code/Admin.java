@@ -16,7 +16,7 @@ public class Admin extends Person {//HAS FINELAR İLE KULLANCILILARIN CEZASINI G
 	}
 
 	public void addBook(Book book) {
-			BookDAO_Imp bookdao = new BookDAO_Imp();	
+			BookDatabaseObject bookdao = new BookDatabaseObject();	
 			Book bk =  Library.getBookByISBN(book.getISBN());	
 			if(bk==null){				
 			 book.setQuantity(1);
@@ -41,7 +41,7 @@ public class Admin extends Person {//HAS FINELAR İLE KULLANCILILARIN CEZASINI G
 	}
 	
 	public boolean deleteBookByISBN(int ISBN) {
-		BookDAO_Imp bookdao = new BookDAO_Imp();	
+		BookDatabaseObject bookdao = new BookDatabaseObject();	
 		Book bk =  Library.getBookByISBN(ISBN);	
 		if(bk==null){				
 		 return false;
@@ -60,7 +60,7 @@ public class Admin extends Person {//HAS FINELAR İLE KULLANCILILARIN CEZASINI G
 	}
 
 	public boolean giveBook(int ISBN, int ID) {
-		BookDAO_Imp bookdao = new BookDAO_Imp();	
+		BookDatabaseObject bookdao = new BookDatabaseObject();	
 		Book book = Library.getBookByISBN(ISBN);
 		Book bk =  Library.getBookByISBN(ISBN);	
 		PersonDAO_Imp persondao = new PersonDAO_Imp();
@@ -95,7 +95,7 @@ public class Admin extends Person {//HAS FINELAR İLE KULLANCILILARIN CEZASINI G
 	public boolean bookReturn(int ISBN, int ID) {
 		
 		try {
-			BookDAO_Imp bookdao = new BookDAO_Imp();
+			BookDatabaseObject bookdao = new BookDatabaseObject();
 			Book book = Library.getBookByISBN(ISBN);
 			PersonDAO_Imp persondao = new PersonDAO_Imp();
 			User user = Library.getUserByID(ID);
@@ -127,7 +127,7 @@ public class Admin extends Person {//HAS FINELAR İLE KULLANCILILARIN CEZASINI G
 				searchingBooks.add(Library.getBooks().get(i));
 			}
 		}
-		BookDAO_Imp book = new BookDAO_Imp();
+		BookDatabaseObject book = new BookDatabaseObject();
 		searchingBooks = book.Search(string, true);
 		return searchingBooks;
 	}

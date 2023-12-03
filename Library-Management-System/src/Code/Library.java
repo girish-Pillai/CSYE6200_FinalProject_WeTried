@@ -13,7 +13,7 @@ public class Library {
 	
 	public static void syncData() {
 	 PersonDAO_Imp personDAO=new PersonDAO_Imp();
-	 BookDAO_Imp bookDAO=new BookDAO_Imp();
+	 BookDatabaseObject bookDAO=new BookDatabaseObject();
 	 books=bookDAO.list();
 	 users=personDAO.listUsers();
 	 admins=personDAO.listAdmins();

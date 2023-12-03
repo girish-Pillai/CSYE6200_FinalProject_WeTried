@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BookDAO_Imp implements BookDAO { // Data Acces Object class for books
+public class BookDatabaseObject implements BookDAO { // Data Acces Object class for books
 	@Override
 	public void add(Book book) { // To add new product
 		try {
