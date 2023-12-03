@@ -14,7 +14,7 @@
 
 <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="805.0" styleClass="root" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.giveBook">
    <children>
-      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="805.0" styleClass="root" stylesheets="@application.css">
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="805.0" style="-fx-background-color: #faeece;" styleClass="root" stylesheets="@application.css">
          <children>
             <TableView fx:id="searchTable" layoutX="-4.0" layoutY="227.0" prefHeight="382.0" prefWidth="382.0" stylesheets="@application.css">
                <columns>
@@ -36,12 +36,12 @@
             </ImageView>
             <TextField fx:id="ISBNgiveBook" layoutX="11.0" layoutY="190.0" promptText="ISBN" />
             <TextField fx:id="IDgiveBook" layoutX="415.0" layoutY="190.0" promptText="ID" />
-            <Text fill="WHITE" layoutX="11.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ISBN">
+            <Text fill="BLACK" layoutX="11.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ISBN">
                <font>
                   <Font name="Al Tarikh Regular" size="13.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutX="415.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
+            <Text fill="BLACK" layoutX="415.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
                <font>
                   <Font name="Al Tarikh Regular" size="13.0" />
                </font>
