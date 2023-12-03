@@ -41,9 +41,8 @@
 	
 }
 .text-simple { 
- -fx-font-smoothing-type: lcd;
- -fx-fill: white;
-  -fx-text-fill: #FFDFD3;
+ 	-fx-font-smoothing-type: lcd;
+ 	-fx-fill: white;
 }
 .back{
 	-fx-background-color : #333;

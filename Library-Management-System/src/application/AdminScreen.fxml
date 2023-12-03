@@ -10,19 +10,19 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="609.0" prefWidth="982.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
+<AnchorPane prefHeight="609.0" prefWidth="982.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" style="-fx-background-color: #faeece; -fx-background-radius: 10;" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
    <children>
-      <Button layoutX="608.0" layoutY="457.0" mnemonicParsing="false" onAction="#switchAdminSignUp" prefHeight="44.0" prefWidth="220.0" stylesheets="@application.css" text="Create Account" textFill="#224c75">
+      <Button layoutX="620.0" layoutY="457.0" mnemonicParsing="false" onAction="#switchAdminSignUp" prefHeight="44.0" prefWidth="220.0" stylesheets="@application.css" text="Create Account" textFill="#070403">
          <font>
             <Font name="Futura Medium" size="21.0" />
          </font>
       </Button>
-      <Label layoutX="454.0" layoutY="191.0" prefHeight="107.0" prefWidth="273.0" text="ID : " textFill="#a49c9c">
+      <Label layoutX="454.0" layoutY="191.0" prefHeight="107.0" prefWidth="273.0" text="ID : " textFill="#070403">
          <font>
             <Font name="Futura Medium" size="30.0" />
          </font>
       </Label>
-      <Button layoutX="613.0" layoutY="390.0" mnemonicParsing="false" onAction="#switchAdminLogIn" prefHeight="44.0" prefWidth="164.0" text="Log In" textFill="#224c75">
+      <Button layoutX="620.0" layoutY="390.0" mnemonicParsing="false" onAction="#switchAdminLogIn" prefHeight="44.0" prefWidth="164.0" text="Log In" textFill="#070403">
          <font>
             <Font name="Futura Medium" size="21.0" />
          </font>
@@ -39,7 +39,7 @@
          <font>
             <Font size="21.0" />
          </font></TextField>
-      <Label layoutX="461.0" layoutY="61.0" prefHeight="64.0" prefWidth="432.0" styleClass="text-simple" stylesheets="@application.css" text="Library Management System" textFill="#8d5d5d">
+      <Label layoutX="550.0" layoutY="61.0" prefHeight="64.0" prefWidth="432.0" styleClass="text-simple" stylesheets="@application.css" text="Northeast Valley Admin" textFill="#070403">
          <font>
             <Font name="Apple Braille Pinpoint 8 Dot" size="32.0" />
          </font>
@@ -49,7 +49,7 @@
             <Image url="@../Images/librarybackground.png" />
          </image>
       </ImageView>
-      <Label layoutX="457.0" layoutY="283.0" prefHeight="107.0" prefWidth="273.0" text="Password : " textFill="#a49c9c">
+      <Label layoutX="457.0" layoutY="283.0" prefHeight="107.0" prefWidth="273.0" text="Password : " textFill="#070403">
          <font>
             <Font name="Futura Medium" size="30.0" />
          </font>
@@ -67,7 +67,7 @@
             <Font size="22.0" />
          </font>
       </PasswordField>
-      <Label layoutX="488.0" layoutY="125.0" prefHeight="64.0" prefWidth="432.0" styleClass="text-simple" stylesheets="@application.css" text="Admin Log In" textFill="#8d5d5d">
+      <Label layoutX="650.0" layoutY="125.0" prefHeight="64.0" prefWidth="432.0" styleClass="text-simple" stylesheets="@application.css" text="Admin Log In" textFill="#070403">
          <font>
             <Font name="Apple Braille Pinpoint 8 Dot" size="24.0" />
          </font>
