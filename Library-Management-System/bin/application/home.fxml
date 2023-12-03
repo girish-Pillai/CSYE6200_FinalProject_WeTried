@@ -11,7 +11,7 @@
 
 <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="805.0" styleClass="root" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
    <children>
-      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="805.0" styleClass="root" stylesheets="@application.css">
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="805.0" style="-fx-background-color: #faeece;" styleClass="root" stylesheets="@application.css">
          <children>
             <Button layoutY="-8.0" mnemonicParsing="false" onAction="#switchUserScreen" prefHeight="101.0" prefWidth="114.0" styleClass="back">
                <graphic>
@@ -21,17 +21,17 @@
                      </image>
                   </ImageView>
                </graphic></Button>
-            <Label layoutX="119.0" layoutY="179.0" prefHeight="193.0" prefWidth="627.0" styleClass="text-simple" stylesheets="@application.css" text="Welcome the Deu CENG Library">
+            <Label layoutX="119.0" layoutY="173.0" prefHeight="225.0" prefWidth="627.0" styleClass="text-simple" stylesheets="@application.css" text="Northeast Valley Bookstore">
                <font>
                   <Font size="43.0" />
                </font>
             </Label>
-            <Label layoutX="57.0" layoutY="368.0" prefHeight="56.0" prefWidth="280.0" styleClass="text-simple" stylesheets="@application.css" text="Contact and Support">
+            <Label layoutX="550.0" layoutY="490.0" prefHeight="56.0" prefWidth="280.0" styleClass="text-simple" stylesheets="@application.css" text="Contact and Support">
                <font>
                   <Font size="27.0" />
                </font>
             </Label>
-            <Hyperlink layoutX="123.0" layoutY="423.0" onAction="#openContact" prefHeight="59.0" prefWidth="71.0" styleClass="blue">
+            <Hyperlink layoutX="650.0" layoutY="530.0" onAction="#openContact" prefHeight="59.0" prefWidth="71.0" styleClass="blue">
                <graphic>
                   <ImageView fitHeight="63.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
                      <image>
