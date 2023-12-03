@@ -14,7 +14,7 @@
 
 <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="805.0" styleClass="root" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.bookReturn">
    <children>
-      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="805.0" styleClass="root" stylesheets="@application.css">
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="805.0" style="-fx-background-color: #faeece;" styleClass="root" stylesheets="@application.css">
          <children>
             <TableView fx:id="searchTable" layoutX="-4.0" layoutY="227.0" prefHeight="382.0" prefWidth="382.0" stylesheets="@application.css">
                <columns>
@@ -37,12 +37,12 @@
             </ImageView>
             <TextField fx:id="ISBNgiveBook" layoutX="225.0" layoutY="117.0" promptText="ISBN" />
             <TextField fx:id="IDgiveBook" layoutX="225.0" layoutY="161.0" promptText="ID" />
-            <Text fill="WHITE" layoutX="29.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Given Book ISBN Number :">
+            <Text fill="BLACK" layoutX="29.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Given Book ISBN Number :">
                <font>
                   <Font name="Al Tarikh Regular" size="13.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutX="108.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID :">
+            <Text fill="BLACK" layoutX="108.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID :">
                <font>
                   <Font name="Al Tarikh Regular" size="13.0" />
                </font>
@@ -54,7 +54,7 @@
                   <TableColumn fx:id="nameUser" prefWidth="341.0" text="NAME" />
                </columns>
             </TableView>
-            <Text layoutX="29.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-simple" text="Books in Library" />
+            <Text layoutX="15.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" fill="BLACK" text="Books in Library" />
             <Text fx:id="message" layoutX="429.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-simple" wrappingWidth="261.0">
                <font>
                   <Font size="28.0" />

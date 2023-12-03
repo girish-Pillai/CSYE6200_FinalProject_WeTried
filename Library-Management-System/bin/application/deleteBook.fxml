@@ -14,7 +14,7 @@
 
 <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="805.0" styleClass="root" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.deleteBook">
    <children>
-      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="805.0" styleClass="root" stylesheets="@application.css">
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="805.0" style="-fx-background-color: #faeece;" styleClass="root" stylesheets="@application.css">
          <children>
             <TableView fx:id="searchTable" layoutX="-4.0" layoutY="227.0" prefHeight="382.0" prefWidth="813.0" stylesheets="@application.css">
                <columns>
@@ -38,7 +38,7 @@
                </image>
             </ImageView>
             <TextField fx:id="ISBNdeleteBook" layoutX="77.0" layoutY="183.0" promptText="ISBN" />
-            <Text fill="WHITE" layoutX="77.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ISBN">
+            <Text fill="BLACK" layoutX="77.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ISBN">
                <font>
                   <Font name="Al Tarikh Regular" size="13.0" />
                </font>
