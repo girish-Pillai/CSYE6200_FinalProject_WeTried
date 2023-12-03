@@ -78,7 +78,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#adminProfile" prefHeight="62.0" prefWidth="167.0" style="-fx-background-color: #c4b17e;" styleClass="blue" stylesheets="@application.css" text="User Profile">
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#adminProfile" prefHeight="62.0" prefWidth="167.0" style="-fx-background-color: #c4b17e;" styleClass="blue" stylesheets="@application.css" text="Admin Profile">
                <graphic>
                   <ImageView fitHeight="47.0" fitWidth="48.0" opacity="0.78">
                      <image>
