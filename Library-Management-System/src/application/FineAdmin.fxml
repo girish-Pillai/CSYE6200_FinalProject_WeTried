@@ -12,7 +12,7 @@
 
 <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="805.0" styleClass="root" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.fine">
    <children>
-      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="805.0" styleClass="root" stylesheets="@application.css">
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="805.0" style="-fx-background-color: #faeece;" styleClass="root" stylesheets="@application.css">
          <children>
             <TableView fx:id="fineTable" layoutX="-4.0" layoutY="150.0" prefHeight="459.0" prefWidth="813.0" stylesheets="@application.css">
                <columns>
