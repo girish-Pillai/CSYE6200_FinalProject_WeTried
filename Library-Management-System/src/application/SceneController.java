@@ -325,17 +325,17 @@ import javafx.scene.control.cell.PropertyValueFactory;
  }
  @FXML
  private ImageView imgMode;
- private boolean isLightMode=true;
- public void changeMode (ActionEvent event){
-     isLightMode=!isLightMode;
-     if(isLightMode){
-         setlightMode();
-     }else{
-         setDarkMode();
-     }
- }
+//private boolean isLightMode=true;
+//public void changeMode (ActionEvent event){
+//     isLightMode=!isLightMode;
+//     if(isLightMode){
+//         setLM();
+//     }else{
+//         setDM();
+//     }
+// }
  
- public void setlightMode(){
+//public void setLM(){
 	 
 //	parent.getStylesheets().remove(getClass().getResource("lightMode.css").toExternalForm());
 //
@@ -344,12 +344,12 @@ import javafx.scene.control.cell.PropertyValueFactory;
 //    Image image=new Image(getClass().getResourceAsStream("/Images/darkMode.png"));
 //     
 //     imgMode.setImage(image);
- }
- private void setDarkMode(){
+// }
+// private void setDM(){
 //	  parent.getStylesheets().remove(getClass().getResource("application.css").toExternalForm());
 //	  parent.getStylesheets().add(getClass().getResource("lightMode.css").toExternalForm());
 //	  Image image=new Image(getClass().getResourceAsStream("/Images/lightMode.png"));
 //	    
 //     imgMode.setImage (image);
- }
+// }
 }
