@@ -121,7 +121,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 		loadPage("giveBook");	
 	}
 	
-	public void changePasswordAdmin() {
+	public void changePassword() {
 		if(LogInScreen.changePassword(admin.getId(), oldPassword.getText(), newPassword.getText()))
 			errorRegister.setText("Password changed succesfully");
 		else errorRegister.setText("Could not change password. Wrong input");
@@ -130,7 +130,6 @@ import javafx.scene.control.cell.PropertyValueFactory;
 	public void hideAndShowAdmin() {
 		idProfile.setText(admin.getName() + " " + admin.getSurname());
 	}
-	
 	@FXML
 	private void adminProfile(MouseEvent event) throws IOException {
 		
@@ -335,21 +334,22 @@ import javafx.scene.control.cell.PropertyValueFactory;
          setDarkMode();
      }
  }
+ 
  public void setlightMode(){
 	 
-	  parent.getStylesheets().remove(getClass().getResource("lightMode.css").toExternalForm());
-
-    parent.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-    
-    Image image=new Image(getClass().getResourceAsStream("/Images/darkMode.png"));
-     
-     imgMode.setImage(image);
+//	parent.getStylesheets().remove(getClass().getResource("lightMode.css").toExternalForm());
+//
+//    parent.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+//    
+//    Image image=new Image(getClass().getResourceAsStream("/Images/darkMode.png"));
+//     
+//     imgMode.setImage(image);
  }
  private void setDarkMode(){
-	  parent.getStylesheets().remove(getClass().getResource("application.css").toExternalForm());
-	  parent.getStylesheets().add(getClass().getResource("lightMode.css").toExternalForm());
-	  Image image=new Image(getClass().getResourceAsStream("/Images/lightMode.png"));
-	    
-     imgMode.setImage (image);
+//	  parent.getStylesheets().remove(getClass().getResource("application.css").toExternalForm());
+//	  parent.getStylesheets().add(getClass().getResource("lightMode.css").toExternalForm());
+//	  Image image=new Image(getClass().getResourceAsStream("/Images/lightMode.png"));
+//	    
+//     imgMode.setImage (image);
  }
 }

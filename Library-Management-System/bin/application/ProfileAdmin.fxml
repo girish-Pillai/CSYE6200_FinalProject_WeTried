@@ -54,7 +54,7 @@
                   <Font size="29.0" />
                </font></Text>
             <Button layoutX="14.0" layoutY="105.0" mnemonicParsing="false" onAction="#hideAndShowAdmin" prefHeight="34.0" prefWidth="178.0" style="-fx-background-color: #93855e;" styleClass="exit" text="Show Admin Name" />
-            <Button layoutX="260.0" layoutY="366.0" mnemonicParsing="false" onAction="#changePasswordAdmin" prefHeight="53.0" prefWidth="118.0" style="-fx-background-color: #93855e;" styleClass="exit" text="Change" />
+            <Button layoutX="260.0" layoutY="366.0" mnemonicParsing="false" onAction="#changePassword" prefHeight="53.0" prefWidth="118.0" style="-fx-background-color: #93855e;" styleClass="exit" text="Change" />
             <Text fx:id="errorRegister" fill="#c93131" layoutX="70.0" layoutY="461.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="601.0">
                <font>
                   <Font size="28.0" />
