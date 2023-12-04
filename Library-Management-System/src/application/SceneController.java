@@ -121,23 +121,16 @@ import javafx.scene.control.cell.PropertyValueFactory;
 		loadPage("giveBook");	
 	}
 	
-	public void changePassword() {
+	public void changePasswordAdmin() {
 		if(LogInScreen.changePassword(admin.getId(), oldPassword.getText(), newPassword.getText()))
 			errorRegister.setText("Password changed succesfully");
 		else errorRegister.setText("Could not change password. Wrong input");
 	}
 
 	public void hideAndShowAdmin() {
-		if(hideShow.getText().equals("Hide")){
-			idProfile.setText(admin.getName() + " " + admin.getSurname());
-			hideShow.setText("Show");
-		}
-		else {
-			idProfile.setText("");
-			hideShow.setText("Hide");
-		}
-		
+		idProfile.setText(admin.getName() + " " + admin.getSurname());
 	}
+	
 	@FXML
 	private void adminProfile(MouseEvent event) throws IOException {
 		
@@ -212,11 +205,6 @@ import javafx.scene.control.cell.PropertyValueFactory;
   stage.setScene(scene);
   stage.show();
  }
- 
- 
- 
-
-
  
 
  private void loadPage(String page) throws IOException {
