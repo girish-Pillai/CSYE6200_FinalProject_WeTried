@@ -128,7 +128,15 @@ import javafx.scene.control.cell.PropertyValueFactory;
 	}
 
 	public void hideAndShowAdmin() {
-		idProfile.setText(admin.getName() + " " + admin.getSurname());
+		if(hideShow.getText().equals("Hide")){
+			idProfile.setText(admin.getName() + " " + admin.getSurname());
+			hideShow.setText("Show");
+		}
+		else {
+			idProfile.setText("");
+			hideShow.setText("Hide");
+		}
+		
 	}
 	@FXML
 	private void adminProfile(MouseEvent event) throws IOException {

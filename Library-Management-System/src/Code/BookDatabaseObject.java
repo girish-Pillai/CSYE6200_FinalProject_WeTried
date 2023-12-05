@@ -82,7 +82,7 @@ public class BookDatabaseObject implements BookDAO { // Data Acces Object class 
 			Connection con = LibraryDB.getConnection();
 			String sql = "SELECT * FROM librarysql.book WHERE INSTR(name,?) > 0 OR INSTR(author,?) > 0";
 			if (!isAdmin) {
-				sql+="AND WHERE NOT quantity=0";
+			    sql += " AND NOT quantity=0";
 			}
 			PreparedStatement ps = con.prepareStatement(sql);
 			ps.setString(1,string);

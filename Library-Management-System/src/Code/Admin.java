@@ -2,6 +2,7 @@ package Code;
 
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Iterator;
 import java.util.List;
 
 public class Admin extends Person {//HAS FINELAR İLE KULLANCILILARIN CEZASINI GÖRÜNTÜLEMESİ GEREK
@@ -60,64 +61,88 @@ public class Admin extends Person {//HAS FINELAR İLE KULLANCILILARIN CEZASINI G
 	}
 
 	public boolean giveBook(int ISBN, int ID) {
-		BookDatabaseObject bookdao = new BookDatabaseObject();	
-		Book book = Library.getBookByISBN(ISBN);
-		Book bk =  Library.getBookByISBN(ISBN);	
-		PersonDAO_Imp persondao = new PersonDAO_Imp();
-		User user = Library.getUserByID(ID);
-		try {
-			if((user.getBookReceived().contains(book)||user.isHasFine()))
-				return false;
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
-		 
-			if (book.getQuantity() == 0) {
-				System.out.println("This book is not available");
-				return false;
-			}				
-			else {
-				if(book.getQuantity()==1) {
-					book.setQuantity(0);
-					bookdao.update(bk);
-				}		
-				else {
-					deleteBookByISBN(ISBN);			
-				}
-				user.getBookReceived().add(book);
-				user.getDeadlines().add(user.getBookReceived().indexOf(book),java.sql.Date.valueOf(Library.getDate().plusDays(15)));
-				persondao.update(user);			
-			}
-			return true;
-		
+	    BookDatabaseObject bookdao = new BookDatabaseObject();
+	    Book book = Library.getBookByISBN(ISBN);
+	    PersonDAO_Imp persondao = new PersonDAO_Imp();
+	    User user = Library.getUserByID(ID);
+
+	    try {
+	        if (user.getBookReceived() != null && (user.getBookReceived().contains(book) || user.isHasFine())) {
+	            System.out.println("User already has the book or has a fine.");
+	            return false;
+	        }
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    }
+
+	    if (book.getQuantity() == 0) {
+	        System.out.println("This book is not available");
+	        return false;
+	    } else {
+	        try {
+	            if (book.getQuantity() == 1) {
+	                book.setQuantity(0);
+	                bookdao.update(book);
+	            } else {
+	                book.setQuantity(book.getQuantity() - 1);
+	                bookdao.update(book);
+	            }
+
+	            user.getBookReceived().add(book);
+	            user.getDeadlines().add(java.sql.Date.valueOf(Library.getDate().plusDays(15)));
+	            persondao.update(user);
+	        } catch (Exception e) {
+	            e.printStackTrace();
+	            return false;
+	        }
+	    }
+
+	    return true;
 	}
 
+
 	public boolean bookReturn(int ISBN, int ID) {
-		
-		try {
-			BookDatabaseObject bookdao = new BookDatabaseObject();
-			Book book = Library.getBookByISBN(ISBN);
-			PersonDAO_Imp persondao = new PersonDAO_Imp();
-			User user = Library.getUserByID(ID);
-			book = user.getBookByISBN(ISBN);
-			if(user.getBookReceived().contains(book)) {
-				book.setQuantity(book.getQuantity() + 1);
-				user.getBookReadBefore().add(book);
-				user.getDeadlines().remove(user.getBookReceived().indexOf(book));
-				user.getBookReceived().remove(book);
-				user.setHasFine(false);
-				Library.checkFines();
-				bookdao.update(book);
-				persondao.update(user);
-				return true;
-			}
-			else return false;
-		} catch (Exception e) {
-			return false;
-		}
-	
-			
+	    try {
+	        BookDatabaseObject bookdao = new BookDatabaseObject();
+	        PersonDAO_Imp persondao = new PersonDAO_Imp();
+
+	        User user = Library.getUserByID(ID);
+	        Book book = user.getBookByISBN(ISBN);
+
+	        if (user.getBookReceived().contains(book)) {
+	            book.setQuantity(book.getQuantity() + 1);
+
+	            // Use Iterator to safely remove elements from the list
+	            Iterator<Book> iterator = user.getBookReceived().iterator();
+	            while (iterator.hasNext()) {
+	                Book receivedBook = iterator.next();
+	                if (receivedBook.equals(book)) {
+	                    iterator.remove();
+	                    break;
+	                }
+	            }
+
+	            // Remove deadline if found
+	            int bookIndex = user.getBookReceived().indexOf(book);
+	            if (bookIndex != -1 && bookIndex < user.getDeadlines().size()) {
+	                user.getDeadlines().remove(bookIndex);
+	            }
+
+	            user.getBookReadBefore().add(book);
+	            user.setHasFine(false);
+	            Library.checkFines();
+	            bookdao.update(book);
+	            persondao.update(user);
+	            return true;
+	        } else {
+	            return false;
+	        }
+	    } catch (Exception e) {
+	        // Log or handle the exception
+	        return false;
+	    }
 	}
+
 
 	public List<Book> searchBook(String string) {
 		List<Book> searchingBooks = new ArrayList<Book>();
