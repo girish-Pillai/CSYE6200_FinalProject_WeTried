@@ -5,7 +5,7 @@ import java.util.Calendar;
 import java.util.Iterator;
 import java.util.List;
 
-public class Admin extends Person {//HAS FINELAR İLE KULLANCILILARIN CEZASINI GÖRÜNTÜLEMESİ GEREK
+public class Admin extends Person {
 	Calendar cal = Calendar.getInstance();
 
 	public Admin(int id, String password, String name, String surname) {
