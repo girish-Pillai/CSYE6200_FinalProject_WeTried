@@ -53,7 +53,7 @@
                   <TableColumn fx:id="nameUser" prefWidth="341.0" text="NAME" />
                </columns>
             </TableView>
-            <Text fx:id="message" layoutX="11.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-simple" wrappingWidth="431.0">
+            <Text fx:id="message" fill="#f23838" layoutX="11.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-simple" wrappingWidth="431.0">
                <font>
                   <Font size="28.0" />
                </font>

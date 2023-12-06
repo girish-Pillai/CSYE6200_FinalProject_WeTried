@@ -54,9 +54,9 @@ public class giveBook implements Initializable {
 		int IDForGive = Integer.parseInt(IDgiveBook.getText());  
 		
 		if(SceneController.admin.giveBook(ISBNForGive, IDForGive))
-			message.setText("Successfully gived");
+			message.setText("Book was issued to the user");
 		else
-			message.setText("Error");
+			message.setText("The user has fine, cannot issue new books");
 		show();
 	}
 	public void show() {

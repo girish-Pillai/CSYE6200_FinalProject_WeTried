@@ -78,7 +78,7 @@ public class CurrentBooks implements Initializable{
 			else {
 				List<Book> BookReceived = SceneController.user.getBookReceived();
 				String bookName = BookReceived.get(0).getName();
-				hasFine.setText("Yo have fine\n You must give back " + bookName);
+				hasFine.setText("You have a fine\nYou must return the book: " + bookName);
 			}
 		idProfile.setText(SceneController.user.getName() + " " + SceneController.user.getSurname());
 		
