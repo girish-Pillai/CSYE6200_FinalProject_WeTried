@@ -235,9 +235,9 @@ import javafx.scene.control.cell.PropertyValueFactory;
 				  
 			 }
 			 else
-				 errorRegister.setText("Wrong Input Try Again.");
+				 errorRegister.setText("Wrong Username/Password, Try Again.");
 		} catch (Exception e) {
-			// errorRegister.setText("Wrong Input Try Again.");
+			// errorRegister.setText("Wrong Username/Password, Try Again.");
 		}
  }
  public void switchUserLogInForSignUp(ActionEvent event ) throws IOException {
@@ -255,7 +255,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 			  stage.show();
 		 }
 		 else
-			 errorRegister.setText("Wrong Input Try Again.");
+			 errorRegister.setText("Wrong Username/Password, Try Again.");
 	
 		
 	
@@ -275,7 +275,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 		  stage.show();
 	 }
 	 else {
-		 errorRegister.setText("Wrong Input Try Again.");
+		 errorRegister.setText("Wrong Username/Password, Try Again.");
 	 }
 	
  }
@@ -292,9 +292,9 @@ import javafx.scene.control.cell.PropertyValueFactory;
 		  stage.show();
 	 }
 	 else
-		 errorRegister.setText("Wrong Input Try Again.");
+		 errorRegister.setText("Wrong Username/Password, Try Again.");
 } catch (Exception e) {
-	 errorRegister.setText("Wrong Input Try Again.");
+	 errorRegister.setText("Wrong Username/Password, Try Again.");
 }
 	 
 	
